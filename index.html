@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="./images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+    <title>Zuma the game</title>    
+    <link rel="stylesheet" href="./style.css">
+<body>
+<main class="game">
+    <div class="game__container">
+        <h1>ZUMA</h1>
+        <div class="player__name hidden">
+            <form name="playerNameForm">
+                <input type="text" name="playerName" maxlength="20" placeholder="Введите имя">
+                <span class="error__span"></span>
+            </form>
+        </div>        
+        <div class="game__menu hidden">
+            <div class="menu player__info">
+                <div class="player__info-name"></div>
+                <div class="player__info-score"></div>
+            </div>
+            <div class="menu">
+                <button class="play__game">Play</button>
+            </div>
+            <div class="menu">
+                <button class="table__records">Records</button>
+            </div>
+        </div>
+        <div class="game__levels hidden">
+            <div class="level">                
+                <button type="button" class="game__level-button" value="1">1</button>                
+            </div>
+            <div class="level">            
+                <button type="button" class="game__level-button" value="2">2</button>                
+            </div>
+            <div class="level">
+                <button type="button" class="game__level-button" value="3">3</button>
+            </div>
+            <div class="level">
+                <button type="button" class="game__level-button" value="4">4</button>
+            </div>
+            <div class="level">
+                <button type="button" class="game__level-button" value="5">5</button>
+            </div>
+            <div class="level">
+                <button type="button" class="game__level-button" value="6">6</button>
+            </div>
+            <div class="level">
+                <button type="button" class="game__level-button" value="7">7</button>
+            </div>
+            <div class="level">
+                <button type="button" class="game__level-button" value="8">8</button>
+            </div>
+            <div class="level">
+                <button type="button" class="game__level-button" value="9">9</button>
+            </div>
+        </div>
+        <div class="game__game-play hidden">
+            <div class="game__field">
+                <div class="game__score">SCORE: 0</div>
+                <canvas id="canvas"></canvas>
+                <div class="game__end-table hidden">
+                    <div class="statistics end"></div>
+                    <div class="statistics"></div>
+                    <div class="statistics"></div>
+                    <div class="statistics"></div>
+                    <div class="statistics"></div>
+                    <div class="next">                      
+                        <img src='./images/next.png' alt="next">                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="game__records hidden">
+            <table class="game__records-table">
+                <tr>
+                    <td colspan="2"></td>
+                </tr>
+                <tr class="game__top-five">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="game__top-five">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="game__top-five">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="game__top-five">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="game__top-five">
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</main>
+<script type="module" src="./scripts/SPA.js"></script>
+</body>
+</html>
